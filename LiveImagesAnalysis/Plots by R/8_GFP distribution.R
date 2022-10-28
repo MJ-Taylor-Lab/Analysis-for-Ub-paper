@@ -1,6 +1,6 @@
 pacman::p_load(dplyr, data.table, ggplot2, viridis)
 
-GFP <- fread("/Users/u_cao/Desktop/IL1 signaling project/Figure/z-Analysis/1_HOIL1/20220426/7_GFP distribution/Calibration Data GFP/20200821 GFP calibration_10pct_60ms 009_CalibrationData_GFP_HOIL1_TRAF6_using.csv.gz")
+GFP <- fread("~")
 
 GFP_mean <- mean(GFP$TOTAL_INTENSITY)
 GFP_sd <- sd(GFP$TOTAL_INTENSITY)
