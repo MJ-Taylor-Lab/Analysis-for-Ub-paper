@@ -1,3 +1,10 @@
+//   To cite this work, please use:
+// 
+//   Deliz-Aguirre, Cao, et al. (2021) MyD88 oligomer size functions as a
+//        physical threshold to trigger IL1R Myddosome signaling.
+//        J. Cell Biol. https://doi.org/10.1083/jcb.202012071
+//
+
 //Converts nd2 files to 16-bit TIFF. Also opens up as a dialog.
 
 // --- INPUT ---
