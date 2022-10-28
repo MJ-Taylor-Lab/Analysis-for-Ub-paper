@@ -2,7 +2,7 @@ CellProfiler Pipeline: http://www.cellprofiler.org
 Version:5
 DateRevision:421
 GitHash:
-ModuleCount:17
+ModuleCount:15
 HasImagePlaneDetails:False
 
 Images:[module_num:1|svn_version:'Unknown'|variable_revision_number:2|show_window:False|notes:['To begin creating your project, use the Images module to compile a list of files and/or folders that you want to analyze. You can also specify a set of rules to include only the desired files in your selected folders.']|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
@@ -250,27 +250,7 @@ CalculateMath:[module_num:14|svn_version:'Unknown'|variable_revision_number:3|sh
     Constrain the result to an upper bound?:No
     Enter the upper bound:1.0
 
-MeasureImageIntensity:[module_num:15|svn_version:'Unknown'|variable_revision_number:4|show_window:True|notes:[]|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
-    Select images to measure:RelA
-    Measure the intensity only from areas enclosed by objects?:Yes
-    Select input object sets:FilteredNuclei, Cytoplasm
-    Calculate custom percentiles:No
-    Specify percentiles to measure:10,90
-
-MeasureColocalization:[module_num:16|svn_version:'Unknown'|variable_revision_number:5|show_window:True|notes:[]|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
-    Select images to measure:Nucleus, RelA
-    Set threshold as percentage of maximum intensity for the images:15.0
-    Select where to measure correlation:Within objects
-    Select objects to measure:Cytoplasm, FilteredNuclei
-    Run all metrics?:Yes
-    Calculate correlation and slope metrics?:Yes
-    Calculate the Manders coefficients?:Yes
-    Calculate the Rank Weighted Colocalization coefficients?:Yes
-    Calculate the Overlap coefficients?:Yes
-    Calculate the Manders coefficients using Costes auto threshold?:Yes
-    Method for Costes thresholding:Faster
-
-ExportToSpreadsheet:[module_num:17|svn_version:'Unknown'|variable_revision_number:13|show_window:True|notes:[]|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
+ExportToSpreadsheet:[module_num:15|svn_version:'Unknown'|variable_revision_number:13|show_window:True|notes:[]|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
     Select the column delimiter:Comma (",")
     Add image metadata columns to your object data file?:No
     Add image file and folder names to your object data file?:No

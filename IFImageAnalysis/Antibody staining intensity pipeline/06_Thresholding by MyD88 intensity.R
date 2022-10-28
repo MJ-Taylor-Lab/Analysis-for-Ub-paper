@@ -57,30 +57,6 @@ MyD88IntegratedPctMean <-
 write.csv(MyD88IntegratedPct, "MyD88Integrated >=0.5 Pct.csv", row.names = F, )
 write.csv(MyD88IntegratedPctMean, "MyD88Integrated >=0.5 PctMean.csv", row.names = F, )
 
-#Calculate Normalized_Integrated_MyD88 < 0.5
-MyD88Integrated_nrowtotalbelow<- pp65_analysis_normalized %>%
-  group_by(GROUP,REP) %>%
-  summarize(N_Tracks_Total = NROW(Normalized_Integrated_MyD88))
-
-MyD88Integrated_nrowbelow <- pp65_analysis_normalized %>%
-  filter(Normalized_Integrated_MyD88 < 0.5) %>%
-  group_by(GROUP,REP) %>%
-  summarize(N_Tracks = NROW(Normalized_Integrated_MyD88))
-
-MyD88IntegratedPctbelow <-
-  merge(MyD88Integrated_nrowtotalbelow,MyD88Integrated_nrowbelow, all = TRUE) %>%
-  mutate(Pct = N_Tracks/N_Tracks_Total*100)
-
-MyD88IntegratedPctbelow[is.na(MyD88IntegratedPctbelow)] = 0
-
-MyD88IntegratedPctbelowMean <- 
-  MyD88IntegratedPctbelow %>%
-  group_by(GROUP) %>%
-  summarize(SE_Pct = std.error(Pct),MeanPct = mean(Pct))
-
-write.csv(MyD88IntegratedPctbelow, "MyD88Integrated <0.5 Pct.csv", row.names = F, )
-write.csv(MyD88IntegratedPctbelowMean, "MyD88Integrated <0.5 PctMean.csv", row.names = F, )
-
 #pp65 mean int and SE
 pp65MeanIntbyRep <-  
   pp65_analysis_normalized %>%
