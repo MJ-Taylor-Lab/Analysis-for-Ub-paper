@@ -5,9 +5,9 @@ These scripts are for analysing fluorescence intensity from image processing to 
 Scripts used in Cao, et al. (2022) Myddosome clustering in IL-1 receptor signaling regulates the formation of a NF-kB activating signalosome.
 
 # Analysis softwares
-**FIJI is Just Image J**
-**CellProfiler 4.2.1**
-**RStudio 2022.07.1**
+* FIJI is Just Image J
+* CellProfiler 4.2.1
+* RStudio 2022.07.1
 
 # 01_TIFF-Subtract.ijm
 This script was described previously (https://github.com/MJ-Taylor-Lab/myddosome-dynamics-pipeline)
