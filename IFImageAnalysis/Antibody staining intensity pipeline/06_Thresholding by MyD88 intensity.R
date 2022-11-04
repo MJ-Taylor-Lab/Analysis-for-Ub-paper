@@ -110,14 +110,14 @@ ggplot() +
   scale_y_continuous(limits = c(-0.02,6),breaks = seq(0,6,1)) +
   labs(
     x = "Groups",
-    y = "Percent of MyD88 greater than or equal to cutoff (%)"
+    y = "Percent of large MyD88 assemblies"
   ) +
   theme_classic() +
   theme(
     legend.position = "none"
   ) +
   ggsave(
-    "Percent of MyD88 greater than or equal to cutoff.pdf",
+    "Percent of large MyD88 assemblies.pdf",
     width = 3,
     height = 4
   )
