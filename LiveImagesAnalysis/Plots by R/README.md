@@ -38,6 +38,8 @@ Scripts used in Cao, et al. (2022) Myddosome clustering in IL-1 receptor signali
   -> Input MyD88 Mean_Colocalization Cat_MaxInt By_Cells
 * 8_GFP distribution
   -> Input CalibrationData of GFP.
+* 9_9_TRAF6/HOIL1 lifetime
+  -> Input table "ColocalizedIntensity" generated from 5.1.
 
 ## Versioning
 We use GitHub for versioning.
