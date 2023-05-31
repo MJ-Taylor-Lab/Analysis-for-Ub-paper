@@ -17,15 +17,15 @@ Scripts used in Cao, et al. (2022) Myddosome clustering in IL-1 receptor signali
 * 2_MyD88 MaxInt Density 
   -> Input GrandColoSummary.
 * 3_% of Colocalization by MyD88 (Myddosome) size
-  -> Input MyD88 Mean_Colocalization Cat_MaxInt By_Cells
+  -> GrandColoSummary.
 * 4_Colocalized Above Threshold_Max Myddosome Size
-  -> Input GrandColoSummary
+  -> Input GrandColoSummary.
 * 5.1_ColoInt_MyddosomeSize tabel 
-  -> Input GrandColoSummary
+  -> Input GrandColoSummary.
 * 5.2_Colo MyddosomeSize_TRAF6-HOIL1_Grid
-  -> Input tables "ColocalizedIntensity" and "MeanColocalizedIntensity" generated from 5.1
+  -> Input tables "ColocalizedIntensity" and "MeanColocalizedIntensity" generated from 5.1.
 * 5.2_Colo MyddosomeSize_TRAF6-HOIL1
-  -> Input tables "ColocalizedIntensity" and "MeanColocalizedIntensity" generated from 5.1
+  -> Input tables "ColocalizedIntensity" and "MeanColocalizedIntensity" generated from 5.1.
 * 6_Recruitment time plot 
   -> Recruitment time is measured manually. The input table contains the following details for plot.
   
@@ -35,10 +35,10 @@ Scripts used in Cao, et al. (2022) Myddosome clustering in IL-1 receptor signali
 | 2     | 120              | MyD88             | HOIL1         |
 
 * 7_% of Colocalization_Grid
-  -> Input MyD88 Mean_Colocalization Cat_MaxInt By_Cells
+  -> Input MyD88 Mean_Colocalization Cat_MaxInt By_Cells.
 * 8_GFP distribution
   -> Input CalibrationData of GFP.
-* 9_9_TRAF6/HOIL1 lifetime
+* 9_TRAF6/HOIL1 lifetime
   -> Input table "ColocalizedIntensity" generated from 5.1.
 
 ## Versioning

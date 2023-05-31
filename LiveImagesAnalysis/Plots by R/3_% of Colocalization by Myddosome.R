@@ -7,9 +7,9 @@ library(ggforce)
 
 setwd("~")
 
-TRAF6 <- fread("~") %>%
+TRAF6 <- fread("~GrandColoSummary.csv.gz") %>%
   filter(PROTEIN == "MyD88", FRAMES_ADJUSTED == 0) %>% mutate(MyddosomeCluster = MAX_NORMALIZED_INTENSITY/4.5)
-HOIL1 <- fread("~") %>%
+HOIL1 <- fread("~GrandColoSummary.csv.gz") %>%
   filter(PROTEIN == "MyD88", FRAMES_ADJUSTED == 0) %>% mutate(MyddosomeCluster = MAX_NORMALIZED_INTENSITY/4.5)
 
 #MeanBar_TRAF6 ----

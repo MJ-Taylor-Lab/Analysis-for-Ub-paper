@@ -7,7 +7,7 @@ Scripts used in Cao, et al. (2022) Myddosome clustering in IL-1 receptor signali
 # Analysis softwares
 * FIJI is Just Image J
 * CellProfiler 4.2.1
-* RStudio 2022.07.1
+* RStudio 2022.07.1 & 2022.12.0
 
 # 01_TIFF-Subtract.ijm
 This script was described previously (https://github.com/MJ-Taylor-Lab/myddosome-dynamics-pipeline)
@@ -33,7 +33,10 @@ This script outputs visualization of MyD88 normalized integrated intensity and a
 
 # 06_Thresholding by MyD88 intensity.R
 This script calculates the percentage of Myddosome clusters (MyD88 Normalized Intensity >= 0.5) in each group, and outputs visualization in jitter plot. 
-This script also calculates K63/M1/pIKK/pp65 normalized mean intensity in each group. Data from off grids are separated based on MyD88 normalized intensity (>=0.5 vs <0.5). Data are visulization in violin jitter combined plot.   
+This script also calculates K63/M1/pIKK/pp65 normalized mean intensity in each group. Data from off grids are separated based on MyD88 normalized intensity (>=0.5 vs <0.5). Data are visulization in violin jitter combined plot.
+
+# 07_Integrated staining per Myddosome.R
+This script calculates K63/M1/pIKK/pp65 normalized integrated intensity per Myddosome from normalized data. MyD88 Normalized intensity of single Myddosome is 0.5, and Myddosome numbers are binned as 1, 2-3 and 4-5 Myddosomes.
 
 # Versioning
 We use GitHub for versioning.
